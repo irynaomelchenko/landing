@@ -41,10 +41,6 @@ body {
 	position: relative;
 }
 
-p {
-	margin: 0 0 10px;	
-}
-
 section {
 	padding: 65px 0;
 }
@@ -165,7 +161,8 @@ h2 {
     top: 70px;
     transform: translateX(-50%);
     display: block;
-    background: #000;
+	background: #000;
+	opacity: 87%;
     width: 90%;
     padding: 20px;
     z-index: 5;
@@ -203,7 +200,11 @@ h2 {
 
     #bars-btn   {
         display: block;
-    }
+	}
+	
+	#header.fixed-header {
+		padding: 6px 20px;
+	}
 }
 
 /* HEADER end */
@@ -227,7 +228,22 @@ h2 {
 	font-weight: 400;
     color: #fefefe;
     letter-spacing: 47px;
-    margin: 0 0 95px;
+	margin: 0 0 95px;
+	padding-left: 47px;
+}
+
+@media screen and (max-width: 1024px) {
+	.main-banner h1 {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.main-banner h1 {
+		font-size: 25px;
+		letter-spacing: 30px;
+		padding-left: 30px;
+	}
 }
 
 @media screen and (max-width: 375px) {
@@ -235,11 +251,12 @@ h2 {
 		font-size: 20px;
 		letter-spacing: 18px;
 		margin-bottom: 30px;
+		padding-left: 18px;
 	}
 }
 
 .main-slogan {
-    max-width: 845px;
+    max-width: 900px;
     width: 100%;
     padding: 0 10px;
     text-align: center;
@@ -316,7 +333,7 @@ h2 {
 
 blockquote {
 	font-size: 24px;
-	line-height: 38px;
+	line-height: 1.58;
 }
 
 blockquote cite {
@@ -428,7 +445,7 @@ blockquote p {
 
 .data-person .position {
 	font-size: 12px;
-}
+}	
 
 /* about-studio-media-query-start */
 
@@ -443,8 +460,12 @@ blockquote p {
     }
 
     .about-studio-description .col {
-        padding: 0 10px;
-    }
+        padding: 0 10px 10px;
+	}
+	
+	blockquote {
+		font-size: 20px;
+	}
 
     .card-flip .row {
         display: block;
@@ -464,7 +485,6 @@ blockquote p {
         max-width: 350px;
         margin: 0 auto;
     }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -474,17 +494,15 @@ blockquote p {
 	}
 	
     .about-studio-description .col {
-        width: 100%;
+		width: 100%;
     }
 
     blockquote {
         font-size: 18px;
-        line-height: 28px;
-        margin: 0 0 10px;
-    }
-
-    blockquote p {
-        margin: 0;
+	}
+	
+	blockquote p {
+		margin: 0 0 10px;
 	}
 	
 	#card-first,
@@ -509,19 +527,18 @@ blockquote p {
 
     .skill-wrapper {
         margin: 0 0 10px;
-	}
-	
+	}	
 }
 
 @media screen and (max-width: 375px) {
 
 	.about-studio h2 {
-		margin: 0 0 2px;		
+		margin: 0 0 10px;		
 	}
 
-	.about-studio-description blockquote p {
-		font-size: 16px;
-	}
+	blockquote {
+        font-size: 16px;
+    }
 
 	.about-studio-description {
 		margin-bottom: 5px;
@@ -531,8 +548,6 @@ blockquote p {
 		font-size: 14px;
 		padding-bottom: 10px;
 	}
-
-
 }
 
 /* about-studio-media-query-end */
@@ -559,7 +574,7 @@ blockquote p {
 	max-width: 1190px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 10px 45px;
+	padding: 0 10px 78px;
 }
 
 .services-tabs-heading li a {
@@ -586,11 +601,52 @@ blockquote p {
 	letter-spacing: 5px;
 	font-size: 14px;
 	text-align: center;
-	text-transform: uppercase;
-	padding: 0 0 33px;
+	text-transform: uppercase;	
+}
+
+@media screen and (max-width: 1024px) {
+
+	.services-tab-description .row {
+		margin: 0 -10px;
+	}
+
+	.services-tab-description .col {
+		padding: 0 10px;
+	}
+
+	.services-tabs-heading {
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.services-tab-description .row {
+		display: block;
+	}
+
+	.services-tab-description .col {
+		width: 100%;
+		padding: 0 10px 10px;
+	}
+
+	.services-tabs-heading {
+		padding: 10px 10px 30px;		
+	}
+
+	.services-tab-title i {
+		font-size: 36px;
+		padding: 0 0 25px;
+	}	
+
+	.services-tab-title span {
+		letter-spacing: 3px;
+    	font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 375px) {
+
 	.services-tabs-heading {
 		flex-wrap: wrap;
 		padding-bottom: 10px;
@@ -603,16 +659,13 @@ blockquote p {
 
 	.services-tab-title i {
 		font-size: 33px;
-		padding-bottom: 12px;
+		padding: 0 0 12px;
 	}
 
 	.services-tab-title span {
-		font-size: 12px;
-		letter-spacing: 3px;
-		padding-bottom: 0;
-	}
+		letter-spacing: 2px;
+	}	
 }
-
 
 /* SERVICES end */
 
@@ -669,6 +722,51 @@ blockquote p {
 	margin-top: -100px;
 }
 
+@media screen and (max-width: 1024px) {
+
+	.looking-for-exclusive {
+		margin-top: 70px;
+		margin-bottom: 35px;
+	}
+	
+	.lets-talk-img img {
+		margin-top: -70px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.lets-talk-img img {
+		margin-top: -40px;
+	}
+
+	.looking-for-exclusive {
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+	.looking-for-exclusive {
+		margin: 0;
+	}	
+
+	.looking-for-exclusive .row {
+		display: block;
+	}
+
+	.looking-for-exclusive .col {
+		width: 100%;
+		padding: 0 10px 20px;
+	}
+
+	.lets-talk-img img {
+		margin-top: 0;
+	}
+
+}
+
 /* LOOKING FOR EXCLUSIVE end */
 
 /* PORTFOLIO start */
@@ -682,12 +780,6 @@ blockquote p {
 	width: 100%;
 	margin: 0 auto 70px;
 	padding: 0 10px;
-}
-
-@media screen and (max-width: 1024px){
-    .heading {
-        margin: 0 0 30px;
-    }
 }
 
 .heading p {
@@ -751,12 +843,17 @@ blockquote p {
 /* portfolio-media-query-start */
 
 @media screen and (max-width: 1024px){
-    .portfolio-tabs-heading {
-        margin: 0 auto 25px;
-    }
+
+	.heading {
+		margin: 0 auto 35px;
+	}
+
+	.portfolio-tabs-heading {
+		padding: 0 10px 35px;
+	}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .portfolio-tabs-heading li{
         margin: 0 20px 0 0;
     }
@@ -764,6 +861,32 @@ blockquote p {
     .portfolio-tab-description .col {
         width: 50%;
     }
+}
+
+@media screen and (max-width: 375px) {
+
+	.portfolio-tabs-heading {
+		display: block;
+		margin: 0 auto;
+		padding: 0 10px 10px;
+	}
+
+	.portfolio-tabs-heading li {
+		font-size: 12px;
+		letter-spacing: 2px;
+		text-align: center;
+		margin: 4px 0;
+		padding: 0 10px;
+	}
+
+	.portfolio-tab-description .row {
+       display: block;
+    }
+
+	.portfolio-tab-description .col {
+        width: 100%;
+    }
+
 }
 
 /* portfolio-media-query-end */
@@ -794,6 +917,13 @@ blockquote p {
 	padding: 8px 10px;
 	border-radius: 3px;
 	letter-spacing: 2px;
+}
+
+@media screen and (max-width: 375px) {
+
+	.like-our-works .btn {
+		max-width: 180px;
+	}
 }
 
 /* LIKE OUR WORKS end */
@@ -835,6 +965,50 @@ blockquote p {
 	text-transform: uppercase;
 	padding: 0 0 33px;
 }
+
+@media screen and (max-width: 1024px) {
+
+	.why-choose-us-description .row {
+		margin: 0 -15px;
+	}
+
+	.why-choose-us-description .col {
+		padding: 0 15px 50px;
+	}
+
+	.choose-item i {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.why-choose-us-description .col {
+		width: 50%;
+		padding: 0 10px 40px;
+	}
+
+	.choose-item i {
+		font-size: 35px;
+		padding: 0 0 25px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+	.why-choose-us-description .col {
+		width: 100%;
+	}
+
+	.choose-item i {
+		padding: 0 0 10px;
+	}
+
+	.choose-item strong {
+		padding: 0 0 10px;
+	}
+}
+
 /* WHY CHOOSE US? end */
 
 /* WHAT PEOPLE SAY start */
