@@ -1026,7 +1026,7 @@ blockquote p {
 .slider-blockquote {
     max-width: 750px;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 .single-item {
@@ -1100,10 +1100,12 @@ blockquote p {
    }
 }
 
-@media screen and (max-width: 767px) {
-    .slider-blockquote {
-        max-width: 300px;
-    }
+@media screen and (max-width: 375px) {
+
+	.slider-blockquote {
+		font-size: 14px;
+		max-width: 300px;
+	}
 }
 
 /* slick-dots */
@@ -1115,7 +1117,7 @@ blockquote p {
 .slick-slider .slick-dots {
     position: absolute;
     left: 50%;
-    bottom: 40px;
+    bottom: 20px;
     transform: translateX(-50%);
 }
 
@@ -1216,7 +1218,7 @@ blockquote p {
 
 @media screen and (max-width: 1024px) {
     .slick-slider .slick-dots {
-        bottom: 20px;
+        bottom: 0;
     }
 }
 
