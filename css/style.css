@@ -51,7 +51,7 @@ section {
     } 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     section {
         padding: 15px 0;
     } 
@@ -85,7 +85,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     h2 {
         margin: 0 0 15px;
     }
@@ -193,7 +193,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #menu {
         display: none;
     }
@@ -238,7 +238,7 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	.main-banner h1 {
 		font-size: 25px;
 		letter-spacing: 30px;
@@ -487,7 +487,7 @@ blockquote p {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .about-studio-description .row {
         display: block;
@@ -508,26 +508,14 @@ blockquote p {
 	#card-first,
     #card-second,
     #card-third {
-        height: 300px;
-    }
-
-    .back-description {
-        height: 300px;
-        overflow-y: scroll;
-        padding: 15px;
-    }
-
-    .back-title {
-        margin: 0 0 10px;
-    }
-
-    .back-description p {
-        margin: 0 0 15px;
-    }
-
-    .skill-wrapper {
-        margin: 0 0 10px;
-	}	
+		height: 370px;
+		width: 330px;
+	}
+	
+	.card-outer {
+		max-width: 330px;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 375px) {
@@ -619,7 +607,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 	.services-tab-description .row {
 		display: block;
@@ -734,7 +722,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 	.lets-talk-img img {
 		margin-top: -40px;
@@ -853,7 +841,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .portfolio-tabs-heading li{
         margin: 0 20px 0 0;
     }
@@ -981,7 +969,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 	.why-choose-us-description .col {
 		width: 50%;
@@ -1024,7 +1012,7 @@ blockquote p {
 }
 
 .slider-blockquote {
-    max-width: 750px;
+	width: 56%;
     padding: 0 10px;
     margin: 0 auto 50px;
 }
@@ -1096,7 +1084,6 @@ blockquote p {
    .slider-blockquote {
         font-size: 16px;
         line-height: 28px;
-        max-width: 500px;
    }
 }
 
@@ -1104,7 +1091,6 @@ blockquote p {
 
 	.slider-blockquote {
 		font-size: 14px;
-		max-width: 300px;
 	}
 }
 
@@ -1232,7 +1218,7 @@ blockquote p {
 
 .all-news-btn {
 	position: absolute;
-	right: 0;
+	right: 10px;
 	top: 5px;
 	letter-spacing: 3px;
 	background-color: #ffffff;
@@ -1295,6 +1281,42 @@ blockquote p {
 	padding: 8px 10px;
 	border-radius: 3px;
 	letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.latest-news .row {
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	.latest-news article {
+		width: 50%;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.latest-news .row {
+		margin: 0 0 10px;
+	}
+
+	.latest-news article:last-child {
+		margin-bottom: 15px;
+	}
+
+	.latest-news article {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+	.all-news-btn {
+		position: absolute;
+		left: 20px;
+		bottom: 0;
+		right: auto;
+		top: auto;
+	}
 }
 
 /* LATEST NEWS end */
@@ -1423,7 +1445,7 @@ address {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .contact h2 {
         margin: 0 0 25px;
@@ -1513,8 +1535,6 @@ footer {
 }
 
 .social-list li .icon {
-	/* width: calc(40px - 20px);
-	margin-right: 20px; */
 	position: relative;
 }
 
@@ -1531,7 +1551,6 @@ footer {
 }
 
 .social-list li .icon .svg-inline--fa {
-	/* font-size: 13px; */
 	color: #111111;
 	z-index: 3;
 	position: absolute;
@@ -1553,6 +1572,16 @@ footer span {
 	font-size: 12px;
 	letter-spacing: 6px;
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	footer {
+		padding: 55px 0 10px;
+	}
+
+	.social-list {
+		margin-bottom: 23px;
+	}
 }
 
 /* FOOTER end */
