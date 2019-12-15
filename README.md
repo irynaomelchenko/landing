@@ -13,9 +13,6 @@ Project is created with:
 * Ament library version: 999
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, clone it from GitHub:
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
+git clone https://github.com/irynaomelchenko/landing.git
