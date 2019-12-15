@@ -4,17 +4,17 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This project is test simple landing.
 	
 ## Technologies
 Project is created with:
 * HTML version: 5
 * CSS version: 3
 * JQuery:
-..*tabs
-..*flip
-..*smooth scrolling
-..*slick carousel
+..* tabs
+..* flip
+..* smooth scrolling
+..* slick carousel
 	
 ## Setup
 To run this project, clone it from GitHub using next command:
