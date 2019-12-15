@@ -246,7 +246,7 @@ h2 {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.main-banner h1 {
 		font-size: 20px;
 		letter-spacing: 18px;
@@ -269,7 +269,7 @@ h2 {
     font-weight: 300;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.main-slogan-subtitle {
 		font-size: 15px;
 	}
@@ -518,7 +518,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.about-studio h2 {
 		margin: 0 0 10px;		
@@ -633,7 +633,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.services-tabs-heading {
 		flex-wrap: wrap;
@@ -734,7 +734,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.looking-for-exclusive {
 		margin: 0;
@@ -851,7 +851,7 @@ blockquote p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.portfolio-tabs-heading {
 		display: block;
@@ -907,7 +907,7 @@ blockquote p {
 	letter-spacing: 2px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.like-our-works .btn {
 		max-width: 180px;
@@ -982,7 +982,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.why-choose-us-description .col {
 		width: 100%;
@@ -1087,7 +1087,7 @@ blockquote p {
    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
 	.slider-blockquote {
 		font-size: 14px;
@@ -1296,7 +1296,7 @@ blockquote p {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 	.latest-news .row {
 		margin: 0 0 10px;
 	}
