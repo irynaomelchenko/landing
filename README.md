@@ -4,19 +4,19 @@
 * [Setup](#setup)
 
 ## General info
-This project is test simple landing.
+This project is test simple landing page.
 	
 ## Technologies
 Project is created with:
 * HTML version: 5
 * CSS version: 3
 * JQuery:
-..* tabs
-..* flip
-..* smooth scrolling
-..* slick carousel
+  * tabs
+  * flip
+  * smooth scrolling
+  * slick carousel
 	
 ## Setup
 To run this project, clone it from GitHub using next command:
 
-git clone https://github.com/irynaomelchenko/landing.git
+  git clone https://github.com/irynaomelchenko/landing.git
