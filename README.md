@@ -4,12 +4,13 @@
 * [Setup](#setup)
 
 ## General info
-This project is test simple landing page.
+This is a test landing page project.
 	
 ## Technologies
 Project is created with:
 * HTML version: 5
 * CSS version: 3
+* Flexbox
 * JQuery:
   * tabs
   * flip
@@ -19,4 +20,4 @@ Project is created with:
 ## Setup
 To run this project, clone it from GitHub using next command:
 
-  git clone https://github.com/irynaomelchenko/landing.git
+$ git clone https://github.com/irynaomelchenko/landing.git
