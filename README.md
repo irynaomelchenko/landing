@@ -8,11 +8,15 @@ This project is simple Lorem ipsum dolor generator.
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* HTML version: 5
+* CSS version: 3
+* JQuery:
+..*tabs
+..*flip
+..*smooth scrolling
+..*slick carousel
 	
 ## Setup
-To run this project, clone it from GitHub:
+To run this project, clone it from GitHub using next command:
 
 git clone https://github.com/irynaomelchenko/landing.git
